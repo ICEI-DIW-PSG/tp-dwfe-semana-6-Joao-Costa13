@@ -1,0 +1,256 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 50px; 
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa input {
+    border: 2px solid black;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    padding: 8px 35px;
+    font-size: 16px;
+    outline: none;
+}
+
+.pesquisa button {
+    background: white;
+    border: 2px solid black;
+    border-radius: 0 10px 10px 0;
+    padding: 7px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* PARTE DE CIMA RONALDINHO */
+
+.quadropessoa {
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    border: 2px solid black;
+    padding: 15px;
+    gap: 20px;
+}
+
+.foto img {
+    display: block;
+    width: 220px;
+    height: 220px;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.info h1 {
+    margin: 5px 0 0 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 22px;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding-top: 15px;
+}
+
+.textodata {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.iconechuteira {
+    width: 80px;
+    height: auto;
+}
+
+/* OS CARDS COM AS COISAS */
+
+.todoscards {
+    width: 100%;
+    max-width: 1300px; /* Define a largura máxima para caber os 4 cards lado a lado */
+    margin: 0 auto;    /* Centraliza o container na tela */
+    display: flex;
+    flex-wrap: wrap;   /* Permite que os cards quebrem de linha */
+    justify-content: center; /* Centraliza os cards da última linha */
+    gap: 20px;
+    padding: 20px 2%;
+}
+
+.card-item {
+    /* (100% / 4) - gap = aprox 23% para ficarem 4 por linha no PC */
+    width: 23%; 
+    min-width: 250px; 
+    text-align: center;
+}
+
+.card-item h2 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+}
+
+.card-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid black;
+}
+
+.card-item a {
+    text-decoration: none;
+    display: block;
+}
+
+/*PARTE RODAPE E FORMULARIO */
+
+.rodape-completo {
+    width: 100%;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+.container-form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-form h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.formulario-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.coluna-esquerda, .coluna-direita {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-rodape input, .formulario-rodape textarea {
+    width: 100%;
+    border: 2px solid black;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.formulario-rodape textarea {
+    height: 126px;
+    resize: none;
+}
+
+.formulario-rodape button {
+    background-color: #ff3b5c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.rodape-simples {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.rodape-simples p {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Ajustes de Responsividade */
+@media (max-width: 1150px) {
+    .card-item {
+        width: 30%; /* Fica 3 por linha em telas médias */
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    .quadropessoa {
+        justify-content: center;
+        text-align: center;
+    }
+    .data {
+        justify-content: center;
+    }
+    .card-item {
+        width: 45%; /* Fica 2 por linha em tablets */
+    }
+}
+
+@media (max-width: 500px) {
+    .card-item {
+        width: 100%; /* Fica 1 por linha no celular */
+    }
+}
