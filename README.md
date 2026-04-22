@@ -10,18 +10,18 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: João Pedro Sousa Costa
+- Matricula: 929010
+- Proposta de projeto escolhida: Pessoa/Conquistas e momentos.
+- Breve descrição sobre seu projeto: O site apresenta Ronaldinho Gaúcho como entidade principal, falando suas informações e uma breve descrição. Como entidade secundária, vão ser mostrado suas conquistas e momentos marcantes por meio do futebol e fora dele.
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](image-2.png)
 
 ## Print da versão responsiva com Bootstrap [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](image-3.png)
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
